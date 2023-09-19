@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * handler: function to handle the specifiers
+ * handler - function to handle the specifiers
  * @f: format for handlers
  * @args: variadic list
- * _printf: function to mimic printf function
+ * @char_count: pointer to count number of characters
+ * _printf - function to mimic printf function
  * Return: returns -1 when met with error
  * and char_count after proper functioning
  */
@@ -33,6 +34,11 @@ void handler(va_list args, int *char_count, const char *f)
 			break;
 	}
 }
+/**
+ * _printf - function to mimic c printf
+ * @format: the format specifier
+ * Return: it returns character count
+ */
 int _printf(const char *format, ...)
 {
 	int count = 0;
