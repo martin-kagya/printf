@@ -10,7 +10,7 @@
  * Return: -1 when met with error and char count when success
  */
 
-void handler(va_list args, int *char_count, const char *f)
+void handle(va_list args, int *char_count, const char *f)
 {
 	switch (*f)
 	{
@@ -56,7 +56,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			format++;
-			handler(args, &counter, format);
+			handle(args, &counter, format);
 		}
 		format++;
 	}
