@@ -9,7 +9,9 @@ int _printf(const char *format, ...)
 	int char_length;
 	conver_t f_list[] = {
 		{"s", string},
-		{"c", print_char}
+		{"c", print_char},
+		{"d", print_integer},
+		{"i", print_integer}
 	};
 	va_list list;
 
