@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	}
 	va_start(list, format);
-	char_length = format_receiver(format, f_list, list);
+	char_length = format_reciever(format, f_list, list);
 	va_end(list);
 	return (char_length);
 }
