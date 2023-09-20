@@ -23,6 +23,7 @@ int format_reciever(const char *format, conver_t f_list[], va_list args);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _puts(char *str);
+int print_digit(va_list);
 int print_percent(__attribute__((unused))va_list args);
 int print_char(va_list);
 int string(va_list);
