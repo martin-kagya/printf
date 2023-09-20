@@ -7,7 +7,6 @@
 int _printf(const char *format, ...)
 {
 	int char_length;
-
 	conver_t f_list[] = {
 		{"s", string},
 		{"c", print_char}
